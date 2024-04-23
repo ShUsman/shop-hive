@@ -1,0 +1,124 @@
+:root {
+    --high-txt: 25px;
+    --low-txt: 15px;
+    --old-price: 20px;
+    --new-price: 40px;
+    --old-price-color: #808080;
+    --new-price-color: #941B0C;
+}
+
+p {
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    font-family: "Rubic", sans-serif;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    align-items: center;
+    margin: auto;
+    padding-top: 80px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 70px;
+}
+
+.card-1 {
+    position: relative;
+    background-color: white;
+    border: 0px white solid;
+    border-radius: 10px;
+    width: 350px;
+    height: 454px;
+}
+
+.card-2 {
+    position: relative;
+    background-color: yellow;
+    border: 0px yellow solid;
+    border-radius: 10px;
+    width: 350px;
+    height: 454px;
+}
+
+h2 {
+    font-size: var(--high-txt);
+    max-width: 250px;
+}
+
+.info {
+    padding-left: 15px;
+}
+
+.info > p {
+    font-size: var(--low-txt);
+    color: grey;
+}
+
+.price {
+    text-align: right;
+    padding-top: 20px;
+    padding-right: 30px;
+}
+
+.old-price {
+    font-size: var(--old-price);
+    color: var(--old-price-color);
+    text-decoration: line-through;
+}
+
+.new-price {
+    font-size: var(--new-price);
+    color:  var(--new-price-color);
+    font-weight: 700;
+}
+
+.basket {
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+    width: 70px;
+    height: 70px;
+    border-top-right-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sale {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.sale > img {
+    margin-top: -20px;
+    margin-left: -30px;
+}
+
+.icons {
+    display: flex;
+    color: white;
+    background-color: #272727;
+    height: 90px;
+    width: 850px;
+    margin-top: 100px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.card-2 {
+    background: linear-gradient(to top left, #FFD100, 80%, silver);
+
+}
+
